@@ -118,7 +118,7 @@
 </head><body onload="load();">
 
   <div id="letterOut">Error! JS is not activated!</div>
-  <input id="asciiIN" value="ASCII Code" onfocus="changeInputValue('asciiIn','ASCII Code',1);" onblur="changeInputValue('asciiIn','ASCII Code',0);" /><br />
+  <input id="asciiIN" value="ASCII Code" onfocus="changeInputValue('asciiIN','ASCII Code',1);" onblur="changeInputValue('asciiIN','ASCII Code',0);" /><br />
   <input id="mnemonicsIN" value="Morse Code Mnemonic" onfocus="changeInputValue('mnemonicsIN','Morse Code Mnemonic',1);" onblur="changeInputValue('mnemonicsIN','Morse Code Mnemonic',0);" /><br />
   <input id="morsecodeIN" value="Morse Code" onfocus="changeInputValue('morsecodeIN','Morse Code',1);" onblur="changeInputValue('morsecodeIN','Morse Code',0);" /><br />
   <input id="phoneticEnglishIN" value="NATO Phonetic" onfocus="changeInputValue('phoneticEnglishIN','NATO Phonetic',1);" onblur="changeInputValue('phoneticEnglishIN','NATO Phonetic',0);" /><br />
