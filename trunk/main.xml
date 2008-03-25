@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Module>
-<ModulePrefs title="Alphabet Gadget" 
-			 author="Julien Letellier"
-			 author_email="letellier.julien@gmail.com" />
-<Content type="html">
-	<![CDATA[
+	<ModulePrefs title="Alphabet Gadget"
+				 author="Julien Letellier"
+				 author_email="letellier.julien@gmail.com" />
+	<Content type="html">
+		<![CDATA[
 <html><head>
 <script type="text/javascript"><!-- 
   /* Specifies the total number fo letters */
   var numberOfLetters = 26;
-  /* Generates a random number */
-  var letter = Math.round((numberOfLetters - 1)*(Math.random()));
-  
+  /* Contains the randomly generated number */
+  var letter = 0;
   /* Letters */
   var letters = new Array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
   /* ASCII-Code */
@@ -29,6 +28,8 @@
   {
     /* Clears the input fields */
 	document.getElementById("asciiIn").value = "ASCII Code";
+	/* Generates a random number */
+	letter = Math.round((numberOfLetters - 1)*(Math.random()));
     /* Displays the generated letter */
     document.getElementById("letterOut").firstChild.nodeValue = letters[letter];
   }
@@ -70,5 +71,6 @@
   <button id="refresh" onclick="load();">Refresh</button>
 
 </body></html>
-]]></Content>
+]]>
+	</Content>
 </Module>
