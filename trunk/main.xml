@@ -3,18 +3,19 @@
 <ModulePrefs title="Alphabet Gadget" 
 			 author="Julien Letellier"
 			 author_email="letellier.julien@gmail.com" />
-<Content type="html"><![CDATA[
+<Content type="html">
+	<![CDATA[
 <html><head>
 <script type="text/javascript"><!-- 
   /* Specifies the total number fo letters */
-  var numberOfLetters = 5;
+  var numberOfLetters = 26;
   /* Generates a random number */
   var letter = Math.round((numberOfLetters - 1)*(Math.random()));
   
   /* Letters */
-  var letters = new Array("A","B","C","D","E");
+  var letters = new Array("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z");
   /* ASCII-Code */
-  var ascii = new Array("65","66","67","68","69");
+  var ascii = new Array("65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85");
   /* Morse Code */
   var morsecode = new Array(".-","-...","-.-.","-..",".");
   /* Morse Code: English mnemonics */
@@ -61,7 +62,7 @@
   <div id="letterOut">No letter</div>
 
   <input id="asciiIn" value="ASCII Code" onfocus="changeInputValue('asciiIn','ASCII Code',1);" onblur="changeInputValue('asciiIn','ASCII Code',0);" /><br />
-  <input id="morsecodeIN" value="Morse Code" onfocus="changeInputValue('morsecodeIN','Morse Code',1);" onblur="changeInputValue('morsecodeIN','Morse Code',0);" /><br />
+  <!--<input id="morsecodeIN" value="Morse Code" onfocus="changeInputValue('morsecodeIN','Morse Code',1);" onblur="changeInputValue('morsecodeIN','Morse Code',0);" /><br />//->
   
   <button id="send" onclick="check();">Check</button>
 
