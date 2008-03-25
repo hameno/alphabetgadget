@@ -27,6 +27,8 @@
   
   function load()
   {
+    /* Clears the input fields */
+	document.getElementById("asciiIn").value = "ASCII Code";
     /* Displays the generated letter */
     document.getElementById("letterOut").firstChild.nodeValue = letters[letter];
   }
@@ -62,9 +64,10 @@
   <div id="letterOut">No letter</div>
 
   <input id="asciiIn" value="ASCII Code" onfocus="changeInputValue('asciiIn','ASCII Code',1);" onblur="changeInputValue('asciiIn','ASCII Code',0);" /><br />
-  <!--<input id="morsecodeIN" value="Morse Code" onfocus="changeInputValue('morsecodeIN','Morse Code',1);" onblur="changeInputValue('morsecodeIN','Morse Code',0);" /><br />//->
+  <!--<input id="morsecodeIN" value="Morse Code" onfocus="changeInputValue('morsecodeIN','Morse Code',1);" onblur="changeInputValue('morsecodeIN','Morse Code',0);" /><br />//-->
   
   <button id="send" onclick="check();">Check</button>
+  <button id="refresh" onclick="load();">Refresh</button>
 
 </body></html>
 ]]></Content>
