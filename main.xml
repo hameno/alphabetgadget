@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+<ModulePrefs title="Alphabet Gadget" 
+			 author="Julien Letellier"
+			 author_email="letellier.julien@gmail.com" />
+<Content type="url" href="./main.htm"><![CDATA[
+
+]]></Content>
+</Module>

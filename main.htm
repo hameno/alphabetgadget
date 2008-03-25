@@ -1,0 +1,62 @@
+<html><head>
+<script type="text/javascript"><!-- 
+  /* Specifies the total number fo letters */
+  var numberOfLetters = 5;
+  /* Generates a random number */
+  var letter = Math.round((numberOfLetters - 1)*(Math.random()));
+  
+  /* Letters */
+  var letters = new Array("A","B","C","D","E");
+  /* ASCII-Code */
+  var ascii = new Array("65","66","67","68","69");
+  /* Morse Code */
+  var morsecode = new Array(".-","-...","-.-.","-..",".");
+  /* Morse Code: English mnemonics */
+  var mnemonics = new Array("a-BOUT","BOIS-ter-ous-ly","CHAR-lie's AN-gels","DAN-ge-rous","eh?");
+  /* NATO english phonetic alphabet */
+  var phoneticEnglish = new Array("Alfa","Bravo","Charlie","Delta","Echo");
+  /* German phonetic alphabet */
+  var phoneticGerman = new Array("Anton","Berta","Cäsar","Dora","Emil");
+  
+  function load()
+  {
+    /* Displays the generated letter */
+    document.getElementById("letterOut").firstChild.nodeValue = letters[letter];
+  }
+  
+  function changeInputValue(id, value, isFocus)
+  {
+    /* Changes the value of the input field */
+    if (document.getElementById(id).value == value || document.getElementById(id).value == "")
+    {
+      if (isFocus)
+        document.getElementById(id).value = "";
+      else
+        document.getElementById(id).value = value;
+    }
+  }
+  
+  function check()
+  {
+    /* Checks if the answers are correct */
+    if (document.getElementById("asciiIn").value == ascii[letter])
+      //richtige Eingabe
+      document.getElementById("asciiIn").style.backgroundColor = "green"
+    else if (document.getElementById("asciiIn").value == "ASCII Code")
+      //keine Eingabe
+      document.getElementById("asciiIn").style.backgroundColor = "white"
+    else
+      //falsche Eingabe
+      document.getElementById("asciiIn").style.backgroundColor = "red";
+  }
+//--></script>
+</head><body onload="load();">
+
+  <div id="letterOut">No letter</div>
+
+  <input id="asciiIn" value="ASCII Code" onfocus="changeInputValue('asciiIn','ASCII Code',1);" onblur="changeInputValue('asciiIn','ASCII Code',0);" /><br />
+  <input id="morsecodeIN" value="Morse Code" onfocus="changeInputValue('morsecodeIN','Morse Code',1);" onblur="changeInputValue('morsecodeIN','Morse Code',0);" /><br />
+  
+  <button id="send" onclick="check();">Check</button>
+
+</body></html>
