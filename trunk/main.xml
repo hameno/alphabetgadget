@@ -17,7 +17,7 @@
   /* ASCII-Code */
   var ascii = new Array("65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90");
   /* Morse Code */
-  var morsecode = new Array(".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..");
+  var morsecode = new Array('.-','-...','-.-.','-..','.','..-.",'--.','....','..','.---','-.-','.-..','--','-.','---','.--.','--.-','.-.','...','-','..-','...-','.--','-..-','-.--','--..');
   /* Morse Code: English mnemonics */
   var mnemonics = new Array("a-BOUT","BOIS-ter-ous-ly","CHAR-lie's AN-gels","DAN-ge-rous","eh?","fe-ne-STRA-tion","GOOD GRA-vy!","hee hee hee hee","aye aye","ju-LY'S JANE JONES!","KET-tle KORN","li-NO-le-um","MORE MILK!","NA-vy","OH! MY! GOD!","pa-RADE PAN-el","QUEEN's WED-ding DAY","ro-TA-tion","si si si","THRUST","un-der WHERE?!","va-va-va-VOOM!","with WHITE WHALE","EX-tra ex-PENSE","YEL-low YO-YO","ZINC ZOO-keep-er");
   /* NATO english phonetic alphabet */
