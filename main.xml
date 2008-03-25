@@ -26,8 +26,9 @@
   
   function load()
   {
-    /* Clears the input fields */
+    /* Resets everything */
 	document.getElementById("asciiIn").value = "ASCII Code";
+	document.getElementById("asciiIn").style.backgroundColor = "white"
 	/* Generates a random number */
 	letter = Math.round((numberOfLetters - 1)*(Math.random()));
     /* Displays the generated letter */
@@ -68,7 +69,7 @@
   <!--<input id="morsecodeIN" value="Morse Code" onfocus="changeInputValue('morsecodeIN','Morse Code',1);" onblur="changeInputValue('morsecodeIN','Morse Code',0);" /><br />//-->
   
   <button id="send" onclick="check();">Check</button>
-  <button id="refresh" onclick="load();">Refresh</button>
+  <button id="reset" onclick="load();">Reset</button>
 
 </body></html>
 ]]>
