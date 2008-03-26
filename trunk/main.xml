@@ -7,7 +7,7 @@
 		<![CDATA[
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" ><head><title>Alphabet Gadget</title>
-<script type="text/javascript" src="./alphabetscript.js"></script>
+<script type="text/javascript" src="http://alphabetgadget.googlecode.com/svn/trunk/alphabetscript.js"></script>
 </head><body onload="load();">
 
   <div id="letterOut">Error! JS is not activated!</div>
